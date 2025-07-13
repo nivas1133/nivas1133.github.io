@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nivas Naragani - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef6ed;
+      color: #1e1e1e;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background-color: #000;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #facc15;
+    }
+
+    .nav-links a.active::after,
+    .nav-links a:hover::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #facc15;
+    }
+
+    /* Hero Section */
+    .hero-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 5%;
+      min-height: 100vh;
+      background-color: #fef6ed;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      color: #1e1e1e;
+    }
+
+    .hero-text p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: #333;
+      max-width: 600px;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+
+    /* About Section */
+    #about {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 80px 5%;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: #ffffff;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-container {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding: 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Nivas Naragani</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-container">
+    <div class="hero-text">
+      <h1>Hi, I'm Nivas Naragani</h1>
+      <p>Computer Science Student & Aspiring Software Developer and passionate about solving problems through code.</p>
+    </div>
+    <div class="hero-image">
+      <img src="98f5f9cd-16ad-4576-b3aa-0f6f81eca2d4.png" alt="Nivas Naragani" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science student with a focus on AI & ML, passionate about solving real-world problems through code.
+      Skilled in Python, Java, and C. I enjoy building intelligent systems and exploring areas like machine learning,
+      networking, and distributed systems. I’ve completed internships and projects that sharpened my skills in model
+      training, web development, and system design. Always curious and driven, I’m excited to keep learning and
+      contributing to impactful tech solutions.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" style="background-color: #fef6ed; padding: 60px 5%;">
+  <h2 style="text-align: center; font-size: 2.5rem; color: #0a0a0a; margin-bottom: 40px;">Skills</h2>
+  
+  <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 40px;">
+    
+    <!-- Skill 1 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" style="height: 80px;" />
+    
+    <!-- Skill 2 -->
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" style="height: 80px;" />
+    
+    <!-- Skill 3 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL" style="height: 80px;" />
+    
+    <!-- Skill 4 -->
+     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" style="height: 80px;" />
+    
+    <!-- Skill 5 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3" style="height: 80px;" />
+
+    <!-- Skill 6 -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" style="height: 80px;" />
+
+
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" style="background-color:#000; padding: 80px 5%; color: #f5f4f4;">
+  <h2 style="text-align: center; font-size: 3rem; margin-bottom: 50px;">Experience</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+    <!-- Internship 1 -->
+    <div style="background-color: #fef6ed; max-width: 350px; padding: 25px; border-radius: 8px; box-shadow: 0 0 15px rgba(255,255,255,0.05);">
+      <h3 style="color: #0a0a0a;">AI Virtual Internship</h3>
+      <h4 style="color: #464544; margin: 5px 0 15px;">SmartInternz</h4>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: #0c0c0c;">
+        ● Worked on AI-based projects focused on model training and deployment in virtual environments.<br>
+        ● Gained hands-on experience with machine learning workflows deployment strategies.
+      </p>
+    </div>
+
+    <!-- Internship 2 -->
+    <div style="background-color: #fef6ed; max-width: 350px; padding: 25px; border-radius: 8px; box-shadow: 0 0 15px rgba(255,255,255,0.05);">
+      <h3 style="color: #030303;">Springboard Internship 5.0</h3>
+      <h4 style="color: #464544; margin: 5px 0 15px;">Infosys Springboard</h4>
+      <p style="font-size: 0.95rem; line-height: 1.6; color: #070707;">
+        ● Built an AI/ML model for an Advanced Image Recognition System.<br>
+        ● Enhanced model accuracy through iterative training , validation , and performance tuning.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- Projects Section -->
+<section id="projects" style="background-color: #fef6ed; color: #000; padding: 80px 5%;">
+  <h2 style="text-align: center; font-size: 3rem; margin-bottom: 50px;">Projects</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+    <!-- Project Card 1 -->
+    <div style="background-color: #2b2b2b; max-width: 380px; padding: 20px; border: 1px solid #444; color: #fff;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnE2m70nPOSk8O4nEeo_88D0Q_I4lX0Td1jw&s" alt="Digital Health Advisor" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;" />
+      <h3 style="margin-top: 20px;">Digital Health Advisor</h3>
+      <p style="font-size: 0.95rem;">As part of a team project, I co-developed a website that takes user inputs and provides tailored outputs, enhancing user experience through smart automation.</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div style="background-color: #2b2b2b; max-width: 380px; padding: 20px; border: 1px solid #444; color: #fff;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkHmSzAsGGC8YzF-RPJ-qEId1Sh2AZIraDBQ&s" alt="Portfolio Website" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;" />
+      <h3 style="margin-top: 20px;">Portfolio Website</h3>
+      <p style="font-size: 0.95rem;">Developed a professional portfolio website to showcase skills and projects. Utilized HTML, CSS, and responsive layouts.</p>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div style="background-color: #2b2b2b; max-width: 380px; padding: 20px; border: 1px solid #444; color: #fff;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRch98IS8O5BjPMZkk4OiozMKDGbGXdY7eYgA&s" alt="Weather Prediction" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;" />
+      <h3 style="margin-top: 20px;">Weather Prediction</h3>
+      <p style="font-size: 0.95rem;">This project explores an efficient, data-driven approach to weather forecasting using the Naive Bayes algorithm. It uses historical weather data for predictions.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Contact Me Section -->
+<section id="contact" style="background-color: #000; color: #fff; padding: 60px 5%; text-align: center;">
+  
+  <!-- Contact Me Header -->
+  <h2 style="font-size: 2.5rem; font-weight: bold;">Contact Me</h2>
+  <p style="margin-bottom: 40px;">Below are the details to reach out to me!</p>
+
+  <!-- Contact Details -->
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px;">
+
+    <!-- Email Address -->
+    <div style="text-align: center; flex: 1; min-width: 200px;">
+      <div style="background-color: #222; width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <i class="fas fa-envelope" style="font-size: 28px; color: #f59e0b;"></i> <!-- Amber -->
+      </div>
+      <h4>EMAIL ADDRESS</h4>
+      <p>
+        <a href="mailto:naraganisudarshan779@gmail.com" style="color: #fff; text-decoration: none;">
+          nivasnaragani113@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <!-- Contact Number -->
+    <div style="text-align: center; flex: 1; min-width: 200px;">
+      <div style="background-color: #222; width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <i class="fas fa-mobile-alt" style="font-size: 30px; color: #34d399;"></i> <!-- Teal Green -->
+      </div>
+      <h4>CONTACT NUMBER</h4>
+      <p>+91 9618055849</p>
+    </div>
+
+    <!-- LinkedIn -->
+    <div style="text-align: center; flex: 1; min-width: 200px;">
+      <div style="background-color: #222; width: 100px; height: 100px; margin: 0 auto 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <i class="fab fa-linkedin" style="font-size: 30px; color: #0077b5;"></i>
+      </div>
+      <h4>LINKEDIN</h4>
+      <p>
+        <a href="https://www.linkedin.com/in/nivas-naragani" target="_blank" style="color: #fff; text-decoration: none;">
+          linkedin.com/in/nivas-naragani
+        </a>
+      </p>
+    </div>
+  </div>
+
+ 
+
+</section>
+
+
+<!-- Footer Section -->
+<footer style="margin-top: 60px; background-color: #fef6ed; padding: 40px 20px; text-align: center; color: #000;">
+  <p>&copy; 2025 Nivas Naragani. All rights reserved.</p>
+  <p>Designed and developed with ❤️ for portfolio presentation.</p>
+  <p>For inquiries, reach out via LinkedIn or email above.</p>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
